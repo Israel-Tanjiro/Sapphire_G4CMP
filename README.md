@@ -54,7 +54,7 @@ for 1 1 2 0 Miller Orieantation .
 
 # Phonon Caustic Plots
 
-
+![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Sapphire_Phonon.png)
 
 
 
