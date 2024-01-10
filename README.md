@@ -105,5 +105,5 @@ The next steps is to compile and execute the program as the standar cmake .. and
 You can use the same root program to plot the phonon caustic plots.
 
 # Phonon Caustic Plots for GaAs
-
+![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Phonon_GaAS.png)
 
