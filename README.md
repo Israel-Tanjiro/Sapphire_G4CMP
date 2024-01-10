@@ -18,9 +18,16 @@ You can change the Miller Orientation using the following command
 In the program, We transform the 4 Miller indices into 3 Miller Indices.
 In this example, we tested two Miller indices orientation 
 ```ruby
-*/g4cmp/Miller_Sapphire  0 0 0 1
+/g4cmp/Millerh 1
+/g4cmp/Millerk -1
+/g4cmp/Milleri 0
+/g4cmp/Millerl 2
 and
-*/g4cmp/Miller_Sapphire  1 1 2 0
+/g4cmp/Millerh 0
+/g4cmp/Millerk 0
+/g4cmp/Milleri 1
+/g4cmp/Millerl 0
+
 ```
 
 # How to Obtain the Phonon Caustics Patterns
@@ -50,7 +57,7 @@ Both Phonons
 root 'Caustic_Plots.C("Both")'
 ```
 Your plot will look like 
-for 0 0 0 1 Miller Orieantation .
+for 0 0 1 0 Miller Orieantation .
 
 # Phonon Caustic Plots
 
@@ -58,5 +65,41 @@ for 0 0 0 1 Miller Orieantation .
 
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Sapphire_Phonon.png)
 
+# Adding New Materials 
+The Folder Crystal Maps Includes the config.txt Files for other Subtrate Materials.
+You can reproduce the Phonon Caustics Pattern using the same program, you only need to change the followings lines on Caustic_PhononDetectorConstruction.cc
+You new to specify the materials 
+```ruby
+fSapphire = new G4Material("fSapphire", 3.98*g/cm3, 2);
+fSapphire->AddElement(nistManager->FindOrBuildElement("Al"), 2);
+fSapphire->AddElement(nistManager->FindOrBuildElement("O"), 3);
+
+```
+The important part is the FindOrBuildElement and the Density of the Material. The other only is the name of the variables (fSapphire).
+For example for GaAs the lines must be 
+```ruby
+fSapphire = new G4Material("fSapphire", 5.32*g/cm3, 2);
+fSapphire->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
+fSapphire->AddElement(nistManager->FindOrBuildElement("As"), 1);
+```
+The other line of the code that you must change is this
+```ruby
+  G4LatticeLogical* SapphireLogical = LM->LoadLattice(fSapphire, "Al2O3");
+```
+to 
+
+```ruby
+  G4LatticeLogical* SapphireLogical = LM->LoadLattice(fSapphire, "GaAs");
+```
+The new materials uses the 3 Miller indices. In this case you need to comment the following line 
+```ruby
+Miller_3=Miller_4_to_3();
+```
+and call the next function.
+```ruby
+Miller_3=Miller_3();
+```
+
+The next steps is to compile and execute the program as the standar cmake .. and make.
 
 
