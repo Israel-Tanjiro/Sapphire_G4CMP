@@ -1,3 +1,4 @@
+# Israel Hernandez Illinois Institute of Technology
 # Crystal parameters Stiffness Constants Values from DOI:https://doi.org/10.1103/PhysRevB.29.2190
 rhombohedral 4.778 Ang 120 deg  # (Lattice constant)
 stiffness 1 1 495.0 GPa # C11, C12, C44
