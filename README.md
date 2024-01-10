@@ -1,7 +1,8 @@
 # Sapphire_G4CMP
 Program to Create Caustic Phonon Plots.
 
-In order to utilize qubits as particle detectors, understanding energy dissipation in qubit substrate (Sapphire) phonon kinematics is essential. These mechanisms are strongly associated with correlated errors in qubit chips, as observed in cosmic muon and gamma ray absorption events reported recently. We are motivated to understand the scattering of sub-Mev Dark Matter (for scalar and vector mediators) and the phonon excitations with sub-eV energy in Sapphire. We attempt to better understand energy dissipation in Sapphire with phonon caustics and kinematics simulation. For this, We expand the capabilities of G4CMP to include the Sapphire Substrate Material. In this G4CMP program, you can obtain the phonon caustic images for Sapphire (Also this can work for other promising materials such as (GaAs, LiF, and CaWO4)
+In order to utilize qubits as particle detectors, understanding energy dissipation in qubit substrate (Sapphire) phonon kinematics is essential. These mechanisms are strongly associated with correlated errors in qubit chips, as observed in cosmic muon and gamma ray absorption events reported recently. We are motivated to understand the scattering of sub-Mev Dark Matter (for scalar and vector mediators) and the phonon excitations with sub-eV energy in Sapphire. We attempt to better understand energy dissipation in Sapphire with phonon caustics and kinematics simulation. For this, We expand the capabilities of G4CMP to include the Sapphire Substrate Material. In this G4CMP program, you can obtain the phonon caustic images for Sapphire (Also this can work for other promising materials such as (GaAs, LiF, and SiO2).<br> 
+Note.- For the moment the kinematic for those Subtrate Materials  is only for Phonon Transportation. The kinematic for electron holes pair transportation is under construction.
 
 This is the first simulation for a new material implemented on G4CMP after 10 years. The phonon simulation is simple in terms of geometry. The basic elements of the simulation are 
 
@@ -12,9 +13,8 @@ This is the first simulation for a new material implemented on G4CMP after 10 ye
 * The Caustic_plot.root program to plot the caustic pattern for Transverse Slow Phononos, Transverse Fast Phonons, or both together.
 # Miller Orientations
 You can change the Miller Orientation using the following command
-```ruby
-/g4cmp/Miller_Sapphire  1 1 2 0 . # For Sapphire you need to specify four Miller Indices
-```
+ For Sapphire you need to specify four Miller Indices
+
 In the program, We transform the 4 Miller indices into 3 Miller Indices.
 In this example, we tested two Miller indices orientation 
 ```ruby
@@ -29,6 +29,7 @@ and
 /g4cmp/Millerl 0
 
 ```
+Those commands are include on the Caustic.mac macro.
 
 # How to Obtain the Phonon Caustics Patterns
 We follow the standard procedure established on geant4 to compile and execute a program. 
@@ -67,7 +68,7 @@ for 0 0 1 0 Miller Orieantation .
 
 # Adding New Materials 
 The Folder Crystal Maps Includes the config.txt Files for other Subtrate Materials.
-You can reproduce the Phonon Caustics Pattern using the same program, you only need to change the followings lines on Caustic_PhononDetectorConstruction.cc
+You can reproduce the Phonon Caustics Pattern using the same program, you only need to change the followings lines on Caustic_PhononDetectorConstruction.cc file
 You new to specify the materials 
 ```ruby
 fSapphire = new G4Material("fSapphire", 3.98*g/cm3, 2);
@@ -75,7 +76,7 @@ fSapphire->AddElement(nistManager->FindOrBuildElement("Al"), 2);
 fSapphire->AddElement(nistManager->FindOrBuildElement("O"), 3);
 
 ```
-The important part is the FindOrBuildElement and the Density of the Material. The other only is the name of the variables (fSapphire).
+The important part is the FindOrBuildElement and the Density of the Material. The other  is only the name of the variables (fSapphire).
 For example for GaAs the lines must be 
 ```ruby
 fSapphire = new G4Material("fSapphire", 5.32*g/cm3, 2);
@@ -100,6 +101,9 @@ and call the next function.
 Miller_3=Miller_3();
 ```
 
-The next steps is to compile and execute the program as the standar cmake .. and make.
+The next steps is to compile and execute the program as the standar cmake .. and make.<br> 
+You can use the same root program to plot the phonon caustic plots.
+
+# Phonon Caustic Plots for GaAs
 
 
