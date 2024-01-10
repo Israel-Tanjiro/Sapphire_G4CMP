@@ -69,7 +69,7 @@ for 0 0 1 0 Miller Orieantation .
 # Adding New Materials 
 The Folder Crystal Maps Includes the config.txt Files for other Subtrate Materials.
 You can reproduce the Phonon Caustics Pattern using the same program, you only need to change the followings lines on Caustic_PhononDetectorConstruction.cc file
-You new to specify the materials 
+You need to specify the materials 
 ```ruby
 fSapphire = new G4Material("fSapphire", 3.98*g/cm3, 2);
 fSapphire->AddElement(nistManager->FindOrBuildElement("Al"), 2);
