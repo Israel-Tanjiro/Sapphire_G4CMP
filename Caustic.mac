@@ -1,37 +1,20 @@
 # This Macro is to Generate Phonons Caustics patterns
 #Depends on the Miller index direction and the Material Geometry
-#Include how to specify the Material property
+/g4cmp/Millerh 0 #This is to Four Miller Indices Sapphire
+/g4cmp/Millerk 0
+/g4cmp/Milleri 1
+/g4cmp/Millerl 0
+# For Four Miller Indices you must use
+#/g4cmp/Millerh 0 #This is to Four Miller Indices Sapphire
+#/g4cmp/Millerk 0
+#/g4cmp/Millerl 0
 /run/initialize
-
 /process/inactivate phononScattering
 /process/inactivate phononDownconversion
-
 /g4cmp/phononBounces 100
 #/tracking/verbose 2
 /gps/energy 2.7e-3 eV
-
 /gps/number 1
-#/gps/pos/type Plane
-#/gps/pos/shape Square
-#/gps/pos/type Point
-#/gps/ang/type iso
-
-
-#/gps/pos/centre 0.0 0.0 0.02 cm
-#/gps/ang/mintheta 1.571 rad
-#/gps/ang/maxtheta 3.14159 rad
-
-#/gps/ang/minphi 0.0 rad
-#/gps/ang/maxphi 6.28319 rad
-
-#Initial Phonon on the 0 0 1 direction with different initial position
-#/gps/pos/type Plane
-#/gps/pos/shape Square
-#/gps/direction 0 0 1
 /gps/ang/type iso
-#/gps/pos/centre 0.0 0.0 0.041 cm
-/gps/pos/centre 0.004 0.0 0.095 cm
-#/gps/pos/centre 0.0 0.0 -0.021 cm #This Works for the Another Symmetry
-#/gps/pos/halfx 0.05 cm
-#/gps/pos/halfy 0.05 cm
-/run/beamOn 20000000
+/gps/pos/centre 0.00 0.0 0.0 cm
+/run/beamOn 40000000
