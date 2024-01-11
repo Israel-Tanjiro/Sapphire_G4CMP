@@ -7,9 +7,8 @@ Note.- For the moment the kinematic for those Subtrate Materials  is only for Ph
 
 How are the phonons generated in an experimental setup?
 
-The Subtrate Crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several nonspherical shells of phonons (Longitudinal and Transverse) are produced and detected on the superconductor detector (Increasing the temperature of the detector). <br> 
+The Subtrate Crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several nonspherical shells of phonons (Longitudinal and Transverse) are produced and detected on the superconductor detector (Increasing the temperature of the detector). It is possible to select the phonon mode by triggering the arrival time on the detector (Longitudinal phonons travel at different velocities).
 
-It is possible to select the phonon mode by triggering the arrival time on the detector (Longitudinal phonons travel at different velocities).
 How are the phonons caustics images produced?<br> 
 
 The ballistic phonons emitted from a point source concentrate along certain directions of the crystal, this is called phonon focusing.<br> 
