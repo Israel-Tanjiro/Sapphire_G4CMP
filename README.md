@@ -28,7 +28,7 @@ This is the first simulation for a new material implemented on G4CMP after 10 ye
 * The Causitic.mac file to generate 40e+6 phonos with isotropic initial random momentum.
 * The Caustic_plot.root program to plot the caustic pattern for Transverse Slow Phononos, Transverse Fast Phonons, or both together.
 # Miller Orientations
-The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the Crystal orientation. In this program, I include a command via macro file to change the Miller orientation, for 4 Miller indices (Only Works for the Sapphire).
+The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. In this program, I include a command via macro file to change the Miller orientation, for 4 Miller indices (Only works for the Sapphire).
 You can change the Miller Orientation using the following command
  For Sapphire, you need to specify four Miller Indices
 
