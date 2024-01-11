@@ -2,14 +2,22 @@
 Program to Create Caustic Phonon Plots.
 
 In order to utilize qubits as particle detectors, understanding energy dissipation in qubit substrate (Sapphire) phonon kinematics is essential. These mechanisms are strongly associated with correlated errors in qubit chips, as observed in cosmic muon and gamma ray absorption events reported recently. We are motivated to understand the scattering of sub-Mev Dark Matter (for scalar and vector mediators) and the phonon excitations with sub-eV energy in Sapphire. We attempt to better understand energy dissipation in Sapphire with phonon caustics and kinematics simulation. For this, We expand the capabilities of G4CMP to include the Sapphire Substrate Material. In this G4CMP program, you can obtain the phonon caustic images for Sapphire (Also this can work for other promising materials such as (GaAs, LiF, and SiO2).<br> 
+
 Note.- For the moment the kinematic for those Subtrate Materials  is only for Phonon Transportation. The kinematic for electron holes pair transportation is under construction.<br> 
+
 How are the phonons generated in an experimental setup?
+
 The Subtrate Crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several nonspherical shells of phonons (Longitudinal and Transverse) are produced and detected on the superconductor detector (Increasing the temperature of the detector). <br> 
+
 It is possible to select the phonon mode by triggering the arrival time on the detector (Longitudinal phonons travel at different velocities).
 How are the phonons caustics images produced?<br> 
+
 The ballistic phonons emitted from a point source concentrate along certain directions of the crystal, this is called phonon focusing.<br> 
+
 To understand why the simulation and the experimental procedure offer the same results. It is necessary to remember the concept of Gauss's Law and build an analogy with the phonon propagation.  An electrical distribution of charge generates lines of electrical field. Using a closed surface we can know the number of lines that through the surface.  Depending on where the surface is placed we obtain a different number of lines penetrating the surface.  <br> 
+
 If we have a small detector and we want to see how those lines are concentrated in the space we have two options. Move the detector to different positions in the space and later plot the intensity (number of lines detected on the detector) obtained at every point of the space. The other option is to keep the detector fixed and move the source point. In both cases, we are going to obtain the same plots of the intensities as a function of the position. In an experiment is not possible to move the detector, therefore the point source is moved. In the case of the simulation, we can  move both the phonon source or the detector, also create a big detector area that covers the maximum possible directions. <br> 
+
 On the simulation, we follow the approach of creating a big detector, because moving the source takes more time to end the simulation (on a standard laptop)~1 day. 
 
 
@@ -89,18 +97,18 @@ fSapphire->AddElement(nistManager->FindOrBuildElement("O"), 3);
 The important part is the FindOrBuildElement and the Density of the Material. The other  is only the name of the variables (fSapphire).
 For example for GaAs the lines must be 
 ```ruby
-fSapphire = new G4Material("fSapphire", 5.32*g/cm3, 2);
-fSapphire->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
-fSapphire->AddElement(nistManager->FindOrBuildElement("As"), 1);
+fSubstrate = new G4Material("fSapphire", 5.32*g/cm3, 2);
+fSubstrate->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
+fSubstrate->AddElement(nistManager->FindOrBuildElement("As"), 1);
 ```
 The other line of the code that you must change is this
 ```ruby
-  G4LatticeLogical* SapphireLogical = LM->LoadLattice(fSapphire, "Al2O3");
+  G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "Al2O3");
 ```
 to 
 
 ```ruby
-  G4LatticeLogical* SapphireLogical = LM->LoadLattice(fSapphire, "GaAs");
+  G4LatticeLogical* SubstrateeLogical = LM->LoadLattice(fSubstrate, "GaAs");
 ```
 The new materials uses the 3 Miller indices. In this case you need to comment the following line 
 ```ruby
