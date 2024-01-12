@@ -26,8 +26,9 @@ On the simulation, we follow the approach of creating a big detector, because mo
 * The Caustic.mac file to generate 40e+6 phonos with isotropic initial random momentum.
 * The Caustic_plot.root program to plot the caustic pattern for Transverse Slow Phonons, Transverse Fast Phonons, or both together.
 # Miller Orientations
-The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. In the case of Sapphire 4 Miller indices are needed.The program 4Miller_to_3Miller.py converts 4 Miller indices to 3 Miller.
-Note.- The program also works on the same coordinate system as the paper :
+The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. ,br.
+In the case of Sapphire 4 Miller indices are needed. The program 4Miller_to_3Miller.py converts 4 Miller indices to 3 Miller.<br>
+Note.- The program is designed to use the same system of coordiantes  as the paper:
 
 
 # How to Obtain the Phonon Caustics Patterns
