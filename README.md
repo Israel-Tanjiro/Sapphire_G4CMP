@@ -100,7 +100,7 @@ to
 The next steps is to compile and execute the program as the standard cmake .. and make commands<br> 
 You can use the same root program to plot the phonon caustic plots.
 
-# Using New Crystal Structures in Your Code
+# Using New Crystal Structures 
 here’s a cool plot you can make for GaAs!
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Phonon_GaAS.png)
 
