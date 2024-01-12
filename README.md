@@ -29,7 +29,7 @@ On the simulation, we follow the approach of creating a big detector, because mo
 The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. <br>
 In the case of Sapphire 4 Miller indices are needed. The program 4_Miller_to_3_Miller.py converts 4 Miller indices to 3 Miller.<br>
 For more information check this link   [4 Miller indices ](https://apps.dtic.mil/sti/trecms/pdf/AD1115835.pdf)<br>
-Note.- The program  4_Miller_to_3_Miller.py is designed to use only for Sapphire and macth the experimental results:
+Note.- The program  4_Miller_to_3_Miller.py is designed to use only for Sapphire and macth the [experimental results ](DOI:https://doi.org/10.1103/PhysRevB.29.2190)
 
 
 # How to Obtain the Phonon Caustics Patterns
