@@ -61,12 +61,13 @@ root 'Caustics_Plots.C("Both")'
 ```
 Your plot will look like 
 for 0 0 1 0 Miller Orientation .
-We do not include the analysis for Longitudinal Phonons due to they does not  concentrate too much along certain directions of the crystal.<br>
 
 
 
 # Phonon Caustic Plots
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Sapphire_Phonon.png)
+We do not include the analysis for Longitudinal Phonons due to they does not  concentrate too much along certain directions of the crystal.<br>
+
 
 # Adding New Materials 
 The Folder Crystal Maps Includes the config.txt Files for other Substrate Materials.
