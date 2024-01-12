@@ -1,13 +1,4 @@
 # This Macro is to Generate Phonons Caustics patterns
-#Depends on the Miller index direction and the Material Geometry
-/g4cmp/Millerh 0 #This is to Four Miller Indices Sapphire
-/g4cmp/Millerk 0
-/g4cmp/Milleri 1
-/g4cmp/Millerl 0
-# For Four Miller Indices you must use
-#/g4cmp/Millerh 0 #This is to Four Miller Indices Sapphire
-#/g4cmp/Millerk 0
-#/g4cmp/Millerl 0
 /run/initialize
 /process/inactivate phononScattering
 /process/inactivate phononDownconversion
