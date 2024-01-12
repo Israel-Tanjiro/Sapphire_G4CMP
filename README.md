@@ -69,7 +69,7 @@ for 0 0 1 0 Miller Orientation .
 We do not include the analysis for Longitudinal Phonons due to they does not  concentrate too much along certain directions of the crystal.<br>
 
 
-# Adding New Materials 
+# Using New Crystal Structures in Your Code
 The Folder Crystal Maps Includes the config.txt Files for other Substrate Materials.
 You can reproduce the Phonon Caustics Pattern using the same program, you only need to change the followings lines on Caustic_PhononDetectorConstruction.cc file
 You need to specify the materials 
@@ -100,7 +100,7 @@ to
 The next steps is to compile and execute the program as the standard cmake .. and make commands<br> 
 You can use the same root program to plot the phonon caustic plots.
 
-# Using New Crystal Structures 
+
 here’s a cool plot you can make for GaAs!
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Phonon_GaAS.png)
 
