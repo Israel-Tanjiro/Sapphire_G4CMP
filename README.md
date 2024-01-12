@@ -46,7 +46,7 @@ If you do not have errors
 You will have a txt file "phonon_hits.txt" with three columns: <br> 
 The first is the name of the particle (Transverse Fast or Transverse Slow) <br> 
 The second and third column is the final position (X,Y) of the phonons on the bolometer <br> 
-We have an analysis root macro for plotting the output phonon_hits.txt. <br>
+We have an analysis root macro "Caustics_Plots.C" for plotting the output phonon_hits.txt. <br>
 To plot only Transverse Fast Phonon Caustics run the following command
 ```console
  root 'Caustics_Plots.C("Fast")'
