@@ -86,7 +86,7 @@ fSubstrate = new G4Material("fSubstrate", 5.32*g/cm3, 2);
 fSubstrate->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
 fSubstrate->AddElement(nistManager->FindOrBuildElement("As"), 1);
 ```
-The other line of the code that you must change is this
+The other line of the code that you must change is
 ```ruby
   G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "Al2O3");
 ```
