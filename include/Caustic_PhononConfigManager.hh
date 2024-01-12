@@ -19,22 +19,12 @@ public:
 
   // Access current values
   static const G4String& GetHitOutput()  { return Instance()->Hit_file; }
-  static G4double GetMillerh(){ return Instance()->Millerh; }
-  static G4double GetMillerk(){ return Instance()->Millerk; }
-  static G4double GetMilleri(){ return Instance()->Milleri; }
-  static G4double GetMillerl(){ return Instance()->Millerl; }
+
 
   // Change values (e.g., via Messenger)
   static void SetHitOutput(const G4String& name)
     { Instance()->Hit_file=name; UpdateGeometry(); }
-  static void SetMillerh(G4double value)
-       { Instance()->Millerh = value; UpdateGeometry(); }
-  static void SetMillerk(G4double value)
-          { Instance()->Millerk = value; UpdateGeometry(); }
-  static void SetMilleri(G4double value)
-             { Instance()->Milleri = value; UpdateGeometry(); }
-  static void SetMillerl(G4double value)
-                        { Instance()->Millerl = value; UpdateGeometry(); }
+
 
   static void UpdateGeometry();
 
@@ -49,10 +39,7 @@ private:
 
 private:
   G4String Hit_file;	// Output file 
-  G4double Millerh;// Four Miller Indices
-  G4double Millerk;
-  G4double Milleri;
-  G4double Millerl;
+
 
   Caustic_PhononConfigMessenger* messenger;
 };
