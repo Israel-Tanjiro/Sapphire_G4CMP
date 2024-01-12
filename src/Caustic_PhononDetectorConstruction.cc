@@ -133,17 +133,8 @@ void Caustic_PhononDetectorConstruction::Caustic_SetupGeometry()
 
   G4LatticePhysical* SubstratePhysical = new G4LatticePhysical(SubstrateLogical);
 
-//This is only works for Sapphire
-    Millerh=Caustic_PhononConfigManager::GetMillerh();
-    Millerk=Caustic_PhononConfigManager::GetMillerk();
-    Milleri=Caustic_PhononConfigManager::GetMilleri();
-    Millerl=Caustic_PhononConfigManager::GetMillerl();
-    //Invoking the Function for 4 Miller indices
-    int *Miller_3;
-    Miller_3=Miller_4_to_3();
-    //This is for the other Materials
-  //  Miller_3=Miller_3(); //For 3 Miller indices
-  SubstratePhysical->SetMillerOrientation(Miller_3[0],Miller_3[1],Miller_3[2]);
+
+  SubstratePhysical->SetMillerOrientation(0,0,0);
 
 
   LM->RegisterLattice(SubstratePhys, SubstratePhysical);
@@ -205,41 +196,4 @@ void Caustic_PhononDetectorConstruction::Caustic_SetupGeometry()
   fSubstrateLogical->SetVisAttributes(simpleBoxVisAtt);
   fBolometerLogical->SetVisAttributes(simpleDetectorAtt);
 }
-int *Caustic_PhononDetectorConstruction::Miller_4_to_3(){
-//Defining the Transformation in the same coordinates System as the Paper
-//Ballistic phonon imaging in sapphire: Bulk focusing and critical-cone channeling effects 'G. L. Koos, and J. P. Wolfe
-//Obtaining the Miller Indices From the Macro
-Millerh=Caustic_PhononConfigManager::GetMillerh();
-Millerk=Caustic_PhononConfigManager::GetMillerk();
-Milleri=Caustic_PhononConfigManager::GetMilleri();
-Millerl=Caustic_PhononConfigManager::GetMillerl();
 
-//Defining the Transformation and the Coordinate System Transformation.
-static int Miller[3];
-G4cout<<"Testing the Values of the Miller Indices \t"<<Millerh<<Millerk<<Milleri<<Millerl<<G4endl;
-Miller[0]=2*Millerh+Millerk;
-Miller[1]=Millerh+2*Millerk;
-Miller[2]=Millerl;
-G4cout<<"Values of the Milller after the conversion\t"<<Miller[0]<<Miller[1]<<Miller[2]<<G4endl;
-//Doing the Rotation of Coordinates, Similar to the Paper.
-static int Miller_Sapphire_paper[3];
-Miller_Sapphire_paper[0]=(Miller[0]+Miller[1])/2;
-Miller_Sapphire_paper[1]=(Miller[0]-Miller[1])/2;
-Miller_Sapphire_paper[2]=Miller[2];
-
-return Miller_Sapphire_paper;
-}
-int *Caustic_PhononDetectorConstruction::Miller_3(){
-
-  Millerh=Caustic_PhononConfigManager::GetMillerh();
-  Millerk=Caustic_PhononConfigManager::GetMillerk();
-  Milleri=Caustic_PhononConfigManager::GetMilleri();
-  Millerl=Caustic_PhononConfigManager::GetMillerl();
-
-static int Miller[3];
-Miller[0]=Millerh;
-Miller[1]=Millerk;
-Miller[2]=Millerl;
-return Miller;
-
-}
