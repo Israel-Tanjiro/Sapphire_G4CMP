@@ -47,7 +47,7 @@ You will have a txt file "phonon_hits.txt" with three columns: <br>
 The first is the name of the particle (Transverse Fast or Transverse Slow) <br> 
 The second and third column is the final position (X,Y) of the phonons on the bolometer <br> 
 We have an analysis root macro "Caustics_Plots.C" for plotting the output phonon_hits.txt. <br>
-To plot only Transverse Fast Phonon Caustics run the following command
+To plot only Transverse Fast Phonon  run the following command
 ```console
  root 'Caustics_Plots.C("Fast")'
 ```
@@ -66,7 +66,7 @@ for 0 0 1 0 Miller Orientation .
 
 # Phonon Caustic Plots
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Sapphire_Phonon.png)
-We do not include the analysis for Longitudinal Phonons due to they does not  concentrate too much along certain directions of the crystal.<br>
+We do not include the analysis for Longitudinal Phonons, due to they does not  concentrate too much along certain directions of the crystal.<br>
 
 
 # Using New Crystal Structures in Your Code
