@@ -25,11 +25,7 @@ public:
 private:
   Caustic_PhononConfigManager* theManager;
   G4UIcmdWithAString* hitsCmd;
-  //Including those variables to contorl the Crystal orientation of the Substrate
-  G4UIcmdWithADouble* MillerhCmd;
-  G4UIcmdWithADouble* MillerkCmd;
-  G4UIcmdWithADouble* MilleriCmd;
-  G4UIcmdWithADouble* MillerlCmd;
+
 
 private:
   Caustic_PhononConfigMessenger(const Caustic_PhononConfigMessenger&);	// Copying is forbidden
