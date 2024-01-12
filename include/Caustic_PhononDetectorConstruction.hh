@@ -26,8 +26,7 @@ public:
 private:
   void Caustic_DefineMaterials();
   void Caustic_SetupGeometry();
-  int *Miller_4_to_3();// To convert 4 Miller Indices to 3, This only works for Sapphire
-  int *Miller_3();// To other Substrate Materials only need 3 Miller Indices
+
 
 private:
   G4Material* fLiquidHelium;
