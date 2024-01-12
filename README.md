@@ -79,8 +79,7 @@ fSubstrate->AddElement(nistManager->FindOrBuildElement("Al"), 2);
 fSubstrate->AddElement(nistManager->FindOrBuildElement("O"), 3);
 
 ```
-The important part is the FindOrBuildElement and the Density of the Material. The other  is only the name of the variables (fSapphire).
-For example for GaAs the lines must be 
+The important part is the FindOrBuildElement and the Density of the Material.
 ```ruby
 fSubstrate = new G4Material("fSubstrate", 5.32*g/cm3, 2);
 fSubstrate->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
