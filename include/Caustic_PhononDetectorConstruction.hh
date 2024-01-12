@@ -39,10 +39,7 @@ private:
   G4CMPSurfaceProperty* topSurfProp;
   G4CMPSurfaceProperty* wallSurfProp;
   G4CMPElectrodeSensitivity* electrodeSensitivity;
-  G4double Millerh;
-  G4double Millerk;
-  G4double Milleri;
-  G4double Millerl;
+
   G4bool fConstructed;		// Flag to not re-recreate surface properties
 };
 
