@@ -33,7 +33,7 @@ Note.- The program  4_Miller_to_3_Miller.py is designed to use only for Sapphire
 
 
 # How to Obtain the Phonon Caustics Patterns
-We follow the standard procedure established on geant4 to compile and execute a program. 
+We follow the standard procedure established on Geant4 to compile and execute a program. 
 ```console
 User@fun:~$ cmake ..
 User@fun:~$ make install
@@ -46,7 +46,8 @@ If you do not have errors
 You will have a txt file "phonon_hits.txt" with three columns: <br> 
 The first is the name of the particle (Transverse Fast or Transverse Slow) <br> 
 The second and third column is the final position (X,Y) of the phonons on the bolometer <br> 
-If you want to plot only Transverse Fast Phonon Caustics
+We have an analysis root macro for plotting the output phonon_hits.txt. <br>
+To plot only Transverse Fast Phonon Caustics run the following command
 ```console
  root 'Caustics_Plots.C("Fast")'
 ```
@@ -60,11 +61,11 @@ root 'Caustics_Plots.C("Both")'
 ```
 Your plot will look like 
 for 0 0 1 0 Miller Orientation .
+We do not include the analysis for Longitudinal Phonons due to they does not  concentrate too much along certain directions of the crystal.<br>
+
+
 
 # Phonon Caustic Plots
-
-
-
 ![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/main/Sapphire_Phonon.png)
 
 # Adding New Materials 
