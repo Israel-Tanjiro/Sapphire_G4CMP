@@ -60,7 +60,7 @@ Both Phonons
 root 'Caustics_Plots.C("Both")'
 ```
 Your plot will look like 
-for 0 0 1 0 Miller Orientation .
+for 0 0 0 1 Miller Orientation .
 
 
 
