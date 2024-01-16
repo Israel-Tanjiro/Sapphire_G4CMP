@@ -8,9 +8,7 @@ Note: for the moment, kinematics for those substrates is only for phonon transpo
 
 For those interested, caustic measurement experimental methodology:
 
-The substrate crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several non-spherical shells of longitudinal and transverse phonons are produced and detected on the superconductor detector, increasing its temperature. It is possible to select the phonon mode by triggering the arrival time on the detector (longitudinal phonons travel at different velocities).
-
-How are the phonons caustics images produced?<br> 
+The substrate crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several non-spherical shells of longitudinal and transverse phonons are produced and detected on the superconductor detector, increasing its temperature. It is possible to select the phonon mode by triggering the arrival time on the detector, phonons travel at different velocities on the substrate.
 
 The ballistic phonons emitted from a point source concentrate along certain directions of the crystal, this is called phonon focusing.<br> 
 
@@ -31,7 +29,6 @@ The phonon caustic depends on the orientation of the crystal with the sensor. Yo
 In the case of Sapphire 4 Miller indices are needed. The program 4_Miller_to_3_Miller.py converts 4 Miller indices to 3 Miller.<br>
 For more information check this link   [4 Miller indices ](https://apps.dtic.mil/sti/trecms/pdf/AD1115835.pdf)<br>
 Note.-  The program 4_Miller_to_3_Miller.py is designed to use only for sapphire and match the [experimental results](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.29.2190) .
-
 
 # How to Obtain the Phonon Caustics Patterns
 We follow the standard procedure established on Geant4 to compile and execute a program. 
@@ -72,7 +69,7 @@ We do not include the analysis for longitudinal phonons, as they do not concentr
 
 
 # Using New Crystal Structures in Your Code
-The Folder Crystal Maps Includes the config.txt Files for other Substrate Materials.
+The folder crystal maps includes the config.txt Files for other substrate materials.
 You can reproduce the phonon caustics pattern using the same program with the following lines changed in the Caustic_PhononDetectorConstruction.cc file. (You need to specify the materials.)
 ```ruby
 fSubstrate = new G4Material("fSubtrate", 3.98*g/cm3, 2);
