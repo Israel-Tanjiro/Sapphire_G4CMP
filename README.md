@@ -8,7 +8,7 @@ Note: for the moment, kinematics for those substrates is only for phonon transpo
 
 For those interested, caustic measurement experimental methodology:
 
-The substrate crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the Substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several non-spherical shells of longitudinal and transverse phonons are produced and detected on the superconductor detector, increasing its temperature. It is possible to select the phonon mode by triggering the arrival time on the detector, phonons travel at different velocities on the substrate.
+The substrate crystal has cooled to a low temperature (only a few degrees above absolute zero temperature). On one face of the substrate, a metal film is deposited and on the opposite face, a superconductor material (sensor) is deposited. The phonons are produced by passing a short burst of current through a metal or by hitting the metal with a source of focused laser light. After the excitation, several non-spherical shells of longitudinal and transverse phonons are produced and detected on the superconductor detector, increasing its temperature. It is possible to select the phonon mode by triggering the arrival time on the detector, phonons travel at different velocities on the substrate.
 
 The ballistic phonons emitted from a point source concentrate along certain directions of the crystal, this is called phonon focusing.<br> 
 
