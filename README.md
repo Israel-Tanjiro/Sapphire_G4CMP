@@ -97,8 +97,9 @@ to
 The next step is to compile and execute the program using the standard cmake and make commands as outlined in the main G4CMP Readme.md file.
 
 
-here’s a cool plot you can make for GaAs![experimental results](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.55.95)
-![Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/Substrate_G4CMP/Phonon_GaAS_110.png) 
+here’s a cool plot you can make for GaAs!
+[experimental results](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.55.95)
+[Alt text of the image](https://github.com/Israel-Tanjiro/Sapphire_G4CMP/blob/Substrate_G4CMP/Phonon_GaAS_110.png) 
 
 
 
