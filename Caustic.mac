@@ -4,7 +4,7 @@
 /process/inactivate phononDownconversion
 /g4cmp/phononBounces 100
 #/tracking/verbose 2
-/gps/energy 2.7e-3 eV
+/gps/energy 0.03 eV
 /gps/number 1
 /gps/ang/type iso
 /gps/pos/centre 0.00 0.0 0.0 cm
