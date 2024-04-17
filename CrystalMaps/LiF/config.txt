@@ -1,4 +1,4 @@
-# Crystal parameters This is for LiF
+# Crystal parameters This is for LiF at 0K https://doi.org/10.1103/PhysRev.106.1175
 cubic 4.07 Ang		# (Lattice constant)
 stiffness 1 1 124.6 GPa	# C11, C12, C44
 stiffness 1 2  42.4 GPa
@@ -13,32 +13,5 @@ LDOS  0.093
 STDOS 0.531
 FTDOS 0.376
 Debye 15 THz		# Can also use temperature or energy I need to put the real values
-# Charge carrier parameters
-bandgap 1.17 eV
-pairEnergy 3.81 eV
-fanoFactor 0.15
 vsound 7290 m/s		# Longitudinal sound speed
 vtrans 4450 m/s		# Transverse sound speed
-l0_e 16.9e-6 m #16.9e-5 m # 8e-6 m #16.9e-6 m
-l0_h 7.5e-5 m
-#hole and electron masses taken from Robert's thesis
-hmass 0.50		# per m(electron)
-emass 0.91 0.19 0.19	# per m(electron)
-valley   0  0  0 deg
-valley   90 90 0 deg
-valley   0 -90 -90 deg
-# Intervalley scattering (matrix elements)
-alpha 0.5 /eV
-acDeform 6.6 eV
-ivDeform 0.5e8 0.8e8 11e8 0.3e8 2e8 2e8 eV/cm		# Jacoboni & Reggiani
-ivEnergy 12.0e-3 18.4e-3 61.8e-3 18.9e-3 47.2e-3 58.8e-3 eV
-neutDens 1e11 /cm3
-epsilon 11.68
-# Intervalley scattering (Linear and Quadratic models)
-ivModel Linear
-ivLinRate0  1.5e6 Hz	# Fitted to Stanford test devices
-ivLinRate1  1.5 Hz	# Fitted to Stanford test devices
-ivLinPower  4.0		# Rate = ivLinRate0 + ivLinRate1 * E^ivLinPower
-ivQuadRate  3.5e-20 Hz	# Fitted to Stanford test devices
-ivQuadField 3395 V/m	# Fitted to Stanford test divices
-ivQuadPower 7.47	# Rate = sqrt((E^2-QuadField^2)^ivPower)
