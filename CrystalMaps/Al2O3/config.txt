@@ -10,40 +10,15 @@ stiffness 3 3  499.9 GPa
 stiffness 4 4  147.7 GPa
 stiffness 6 6  166.7 GPa
 # Phonon parameters
-dyn -246.919 -333.13 143.8 167.29 GPa #Simulating Phonon Propagation in New Materials(Working on the Paper)
-scat 4.0e-44 s3 #Sapphire # DOI:https://doi.org/10.1016/S0921-4526(02)00581-1
-decay 1.34e-54 s4 #Decay Rate Sapphire #Simulating Phonon Propagation in New Materials(Working on the Paper)
-decayTT 0.66
+dyn -27.02 -152.8 139.8 166.24 GPa #Simulating Phonon Propagation in New Materials(Working on the Paper)
+scat 0.025e-42 s3 #Sapphire # DOI:https://doi.org/10.1016/S0921-4526(02)00581-1
+decay 12.7e-55 s4 #Decay Rate Sapphire #Simulating Phonon Propagation in New Materials(Working on the Paper)
+decayTT 0.67
 # From S. Tamura et al., PRB44(7), 1991
-LDOS 0.097834 #Working on this
-STDOS 0.53539
-FTDOS 0.36677
-Debye 25 THz #https://doi.org/10.1038/s42005-020-0383-6
-
-# Charge carrier parameters, They must be modified for Sapphire
-bandgap 0.74 eV
-pairEnergy 2.96 eV
-fanoFactor 0.1057
-vsound 11100.0 m/s	# Longitudinal sound speed DOI:https://doi.org/10.1103/PhysRevB.29.2190
+LDOS 0.137
+STDOS 0.511
+FTDOS 0.351
+Debye 8.41 THz #https://doi.org/10.1038/s42005-020-0383-6
+vsound 11200.0 m/s	# Longitudinal sound speed DOI:https://doi.org/10.1103/PhysRevB.29.2190
 vtrans 6040.0 m/s	# Transverse sound speed DOI:https://doi.org/10.1103/PhysRevB.29.2190
-l0_e 257 um
-l0_h 108 um
-#hole and electron masses taken from Robert's thesis
-hmass 0.350		# per m(electron)
-emass 1.588 0.081 0.081	# per m(electron)
-valley  -45 35.2644 90 deg
-valley   45 35.2644 90 deg
-valley  135 35.2644 90 deg
-valley -135 35.2644 90 deg
-# Intervalley scattering (matrix elements)
-alpha 0.3 /eV
-acDeform 11 eV
-ivDeform 3e8 0.2e8 eV/cm		# Jacoboni & Reggiani
-ivEnergy 27.3e-3 10.3e-3 eV
-neutDens 1e11 /cm3
-epsilon 16.2
-# Intervalley scattering (Edelweiss model)
-ivQuadRate 6.72e-2 Hz	# From Edelweiss Collaboration
-ivQuadField 217 V/m	# From Edelweiss Collaboration
-ivQuadPower 3.24	# Rate = sqrt((E^2-QuadField^2)^ivPower)
 
