@@ -28,11 +28,11 @@ In our simulation, we follow the approach of creating a big detector, because it
 The phonon caustics depends on the angular dimension and the size of the subtrate in exeprimental. <br> 
 In order to match the experimental angles with the simualtion we need to initialize the initial phonon at difference distance <br> from the top part of the bolometers.
 The angle is differents for each material. You need to use the following dimensions and the initial position of the phonons to reproduce the experimental phonon caustisc.<br> 
-* Sapphire 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ``` 
-* GaAs 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ```  &theta; = 59.04
-* LiF 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
-* CaF2 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
-* CaWO<sub>4 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
+* Sapphire 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ``` , &theta; = 58.0
+* GaAs 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ``` , &theta; = 59.04
+* LiF 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.03 cm ``` , &theta; = 40.0
+* CaF2 4mm x 4mm x 8mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ``` , &theta; = 23.0
+* CaWO<sub>4 9mm x 9mm x 6mm ```console /gps/pos/centre 0.0 0.0 0.0 cm ``` , &theta; = 56.3
 
 # Miller Orientations
 The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. <br>
