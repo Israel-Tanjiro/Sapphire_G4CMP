@@ -25,12 +25,14 @@ In our simulation, we follow the approach of creating a big detector, because it
 * The Caustic.mac file to generate 40e+6 phonos with isotropic initial random momentum.
 * The Caustic_plot.root program to plot the caustic pattern for Transverse Slow Phonons, Transverse Fast Phonons, or both together.
 # Substrate Dimension to Match the Experimental Phonon Caustics
-The phonon caustics depends on the angular dimension and the size of the subtrate in exeprimental. In order to match the experimental angles with the simualtion we need to initialize the initial phonon at difference distance from the top part of the bolometers. The angle is differents for each material. You need to use the following dimensions and the initial position of the phonons to reproduce the experimental phonon caustisc.
-*Sapphire 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
-*GaAs 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ```  &theta; = 59.04
-*LiF 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
-*CaF2 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
-*CaWO<sub>4 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
+The phonon caustics depends on the angular dimension and the size of the subtrate in exeprimental. <br> 
+In order to match the experimental angles with the simualtion we need to initialize the initial phonon at difference distance <br> from the top part of the bolometers.
+The angle is differents for each material. You need to use the following dimensions and the initial position of the phonons to reproduce the experimental phonon caustisc.<br> 
+* Sapphire 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ``` 
+* GaAs 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ```  &theta; = 59.04
+* LiF 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
+* CaF2 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
+* CaWO<sub>4 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ```
 
 # Miller Orientations
 The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. <br>
