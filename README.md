@@ -32,7 +32,7 @@ The angle is differents for each material. You need to use the following dimensi
 * GaAs 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 0.08 cm ``` , &theta; = 59.04
 * LiF 4mm x 4mm x 4mm ```console /gps/pos/centre 0.0 0.0 -0.03 cm ``` , &theta; = 40.0
 * CaF2 4mm x 4mm x 8mm ```console /gps/pos/centre 0.0 0.0 -0.06 cm ``` , &theta; = 23.0
-* CaWO<sub>4 9mm x 9mm x 6mm ```console /gps/pos/centre 0.0 0.0 0.0 cm ``` , &theta; = 56.3
+* CaWO4 9mm x 9mm x 6mm ```console /gps/pos/centre 0.0 0.0 0.0 cm ``` , &theta; = 56.3
 
 # Miller Orientations
 The phonon caustic depends on the orientation of the crystal with the sensor. You can obtain different phonon caustics images by changing the crystal orientation. <br>
