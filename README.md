@@ -47,7 +47,7 @@ User@fun:~$ cmake ..
 User@fun:~$ make install
 [100%] Built target g4cmpPhononCaustics
 ```
-This example does not support running with multiple threads. The user should ensure that /run/numberOfThreads 1 is specified in their macro file.<br>
+This example does not support running with multiple threads. The user should ensure that ```/run/numberOfThreads 1 ``` is specified in their macro file.<br>
 For example, if you do not have errors to compile the program you can run only one time the following macro to create phonon caustics patterns.
 ```console
 ./g4cmpaSapphire Caustic.mac
