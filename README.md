@@ -1,7 +1,7 @@
 # G4CMP Phonon Simulation
 Program to Create Caustic Phonon Plots.
 
-In order to utilize qubits as particle detectors, understanding energy dissipation in qubit substrate (sapphire) phonon kinematics is essential. These mechanisms are strongly associated with correlated errors in qubit chips, as observed in cosmic muon and gamma ray absorption events reported recently. We attempt to better understand energy dissipation in sapphire with phonon caustics and kinematics simulation. For this, we expand the capabilities of G4CMP to include phonon kinematics in sapphire. In this G4CMP program, you can obtain phonon caustic images for sapphire, though it will also work for other GaAs, LiF, and SiO2.<br> 
+In order to utilize qubits as particle detectors, understanding energy dissipation in qubit substrate (sapphire) phonon kinematics is essential. These mechanisms are strongly associated with correlated errors in qubit chips, as observed in cosmic muon and gamma ray absorption events reported recently. We attempt to better understand energy dissipation in sapphire with phonon caustics and kinematics simulation. For this, we expand the capabilities of G4CMP to include phonon kinematics in sapphire. In this G4CMP program, you can obtain phonon caustic images for sapphire, though it will also work for other GaAs, LiF, CaF<sub>2</sub> and CaWO<sub>4</sub>.<br>
 
 Note: for the moment, kinematics for those substrates is only for phonon transport, and electron-hole pair transportation is still under construction.<br> 
 
