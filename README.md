@@ -47,7 +47,8 @@ User@fun:~$ cmake ..
 User@fun:~$ make install
 [100%] Built target g4cmpPhononCaustics
 ```
-If you do not have errors
+This example does not support running with multiple threads. The user should ensure that /run/numberOfThreads 1 is specified in their macro file.<br>
+For example, if you do not have errors to compile the program you can run only one time the following macro to create phonon caustics patterns.
 ```console
 ./g4cmpaSapphire Caustic.mac
 ```
@@ -82,26 +83,24 @@ We do not include the analysis for longitudinal phonons, as they do not concentr
 The folder crystal maps includes the config.txt Files for other substrate materials.
 You can reproduce the phonon caustics pattern using the same program with the following lines changed in the Caustic_PhononDetectorConstruction.cc file. (You need to specify the materials.)
 ```ruby
-fSubstrate = new G4Material("fSubtrate", 3.98*g/cm3, 2);
-fSubstrate->AddElement(nistManager->FindOrBuildElement("Al"), 2);
-fSubstrate->AddElement(nistManager->FindOrBuildElement("O"), 3);
+fCrystalMaterial = nistManager->FindOrBuildMaterial("G4_ALUMINUM_OXIDE");
 
 ```
-The important part is the FindOrBuildElement and the Density of the Material.
+The important part is the FindOrBuildElement, for example for Gallium Arsenide
 ```ruby
-fSubstrate = new G4Material("fSubstrate", 5.32*g/cm3, 2);
-fSubstrate->AddElement(nistManager->FindOrBuildElement("Ga"), 1);
-fSubstrate->AddElement(nistManager->FindOrBuildElement("As"), 1);
+fCrystalMaterial = nistManager->FindOrBuildMaterial("G4_GALLIUM_ARSENIDE");
+
 ```
 The other line of the code that you must change is
 ```ruby
   G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "Al2O3");
 ```
-to 
+to
 
 ```ruby
   G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "GaAs");
 ```
+
 
 
 The next step is to compile and execute the program using the standard cmake and make commands as outlined in the main G4CMP Readme.md file.
