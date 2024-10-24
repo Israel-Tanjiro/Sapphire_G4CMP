@@ -100,7 +100,7 @@ to
 ```ruby
   G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "GaAs");
 ```
-This line in the code allows you to load the phonon parameters for the substrate you are interested in, such as GaAs. You can also modify the Miller orientation if needed. In this example, we are using the 1 0 0 orientation for GaAs. The relevant line in the code is:
+This previous line in the code allows you to load the phonon parameters for the substrate you are interested in, such as GaAs. You can also modify the Miller orientation if needed. In this example, we are using the 1 0 0 orientation for GaAs. The relevant line in the code is:
 ```ruby
    SubstratePhysical->SetMillerOrientation(1,0,0);
 ```
