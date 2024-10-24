@@ -100,6 +100,11 @@ to
 ```ruby
   G4LatticeLogical* SubstrateLogical = LM->LoadLattice(fSubstrate, "GaAs");
 ```
+and the Miller orientation. Here we are using 1 0 0 for GaAs.
+
+```ruby
+   SubstratePhysical->SetMillerOrientation(1,0,0);
+```
 
 
 
